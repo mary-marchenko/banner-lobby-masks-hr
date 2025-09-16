@@ -20,10 +20,20 @@ body
     max-width: 100%
     height: auto
 
-//body.dark
-//  .bannerTeam
-//    &::before
-//      background: linear-gradient(90deg, #12131C 27.33%, rgba(18, 19, 28, 0.00) 100%)
+.bannerTeam
+  &.en
+    .bannerTeam__bonus
+      width: 540px
+      padding: 0 45px
+      &-right
+        justify-content: center
+      &-item
+        &:nth-child(2)
+          @media screen and (max-width: 600px) and (min-height: 500px)
+            max-width: 52px
+      @media screen and (max-width: 600px) and (min-height: 500px)
+        width: 276px
+        padding: 0 20px 0 22px
 
 .bannerTeam
   width: 100%
